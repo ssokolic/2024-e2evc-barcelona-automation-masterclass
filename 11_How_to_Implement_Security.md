@@ -4,7 +4,21 @@ Implementing security in an automation project requires a holistic approach that
 and application but also the tools, processes, and people involved. Here’s a step-by-step guide to ensuring security
 is properly integrated at every stage of your automation and deployment process.
 
+![Slide16.jpeg](pictures/Slide16.jpeg)
+
 ## Security by Design
+
+![IMG_2008.jpeg](pictures/IMG_2008.jpeg)
+![IMG_7761.jpeg](pictures/IMG_7761.jpeg)
+
+Implement version control
+implement access control
+use encryption
+use security testing tools
+regular reviews
+implement auditing and monitoring
+
+> Watch out for drifts
 
     •	Shift Left Approach: Incorporate security from the very beginning of the project by addressing security in the
     	design phase, rather than treating it as an afterthought. The shift left approach emphasizes integrating security checks
@@ -136,3 +150,7 @@ properly encrypted and protected.
     •	Incident Response Drills: Conduct regular security drills to simulate attacks or breaches, ensuring the team
     	knows how to respond swiftly and effectively.
     •	Security Champion: Appoint a security champion within each team to promote
+
+Implement Security as Early as Possible
+Securing infrastructure as code (IaC) deployments is crucial to prevent unauthorized access, data breaches, and other security threats. Here are some best practices for securing IaC deployments: 1. Use version control: Use a version control system like Git to manage your codebase. This allows you to track changes to your infrastructure over time and revert to a previous state if needed. 2. Implement access controls: Implement access controls to ensure that only authorized users can access and modify your infrastructure code. This can include using strong passwords, two-factor authentication, and limiting access to specific users and groups. 3. Use encryption: Use encryption to protect sensitive data, such as credentials and private keys. This can include using HTTPS to encrypt network traffic and encrypting data at rest using tools like AWS Key Management Service or HashiCorp Vault. 4. Implement least privilege: Implement the principle of least privilege to limit the access of users and processes to only what is necessary to perform their tasks. This can include using role-based access controls (RBAC) to limit access to specific resources and functions. 5. Use security testing tools: Use automated security testing tools, such as static code analysis and vulnerability scanners, to identify potential security vulnerabilities in your infrastructure code. 6. Regularly review and update security policies: Regularly review and update your security policies and procedures to ensure that they are up-to-date with the latest security best practices and industry standards. 7. Implement auditing and monitoring: Implement auditing and monitoring tools to track and log changes to your infrastructure code and configuration. This can help identify security incidents and facilitate incident response.
+By following these best practices, you can help secure your infrastructure as code deployments and minimize the risk of security threats.
