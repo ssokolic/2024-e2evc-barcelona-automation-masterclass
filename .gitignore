@@ -11,6 +11,7 @@ mega-linter.log
 # .tfstate files
 *.tfstate
 *.tfstate.*
+main.tf
 
 # Crash log files
 crash.log
