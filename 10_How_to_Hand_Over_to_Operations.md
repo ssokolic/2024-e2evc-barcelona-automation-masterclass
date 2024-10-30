@@ -8,140 +8,282 @@
 
 ![IMG_7314.jpeg](pictures/IMG_7314.jpeg)
 
+## How to handover to operations
+
 A successful handover from development to operations is critical for ensuring that the automated systems,
 infrastructure, or applications being deployed will run smoothly in production and be maintainable long-term.
-The handover should provide operations with all the necessary tools, documentation, and knowledge to manage, monitor,
-and troubleshoot the system. Here’s a step-by-step guide to effectively hand over automation or software projects to the
-operations team:
 
-Handover to operations in an Infrastructure as Code (IaC) project is an important step to ensure that the new infrastructure is operationalized, and that the ongoing maintenance and management are properly executed. Here are some steps to consider when defining the handover to operations in an IaC project: 1. Define the scope of the handover: Define which components of the infrastructure are included in the handover, and which are outside the scope. This can include defining which resources, processes, and tools will be handed over to the operations team. 2. Document the handover process: Document the steps and processes involved in the handover, including any specific requirements or dependencies. This documentation should be shared with the operations team to ensure that they have a clear understanding of what is expected. 3. Provide training and support: Provide training and support to the operations team to ensure that they have the necessary skills and knowledge to manage and maintain the new infrastructure. This can include providing documentation, training sessions, and ongoing support. 4. Define roles and responsibilities: Clearly define the roles and responsibilities of both the DevOps team and the operations team in the ongoing management of the infrastructure. This can include defining who is responsible for monitoring, troubleshooting, and updating the infrastructure. 5. Establish communication channels: Establish communication channels between the DevOps team and the operations team to ensure that any issues or concerns are addressed promptly. This can include establishing regular meetings, creating a support ticketing system, or using a chat platform for real-time communication. 6. Test the handover: Test the handover process to ensure that all components of the infrastructure are properly handed over to the operations team, and that the team is able to manage and maintain the new infrastructure effectively.
-By following these steps, you can ensure that the handover to operations in an IaC project is well-defined, and that the operations team is equipped to manage and maintain the new infrastructure effectively.
+> The handover should provide operations with all the necessary tools, documentation, and knowledge to manage, monitor,
+> and troubleshoot the system. Here’s a step-by-step guide to effectively hand over automation or software projects to the
+> operations team:
+
+---
 
 ## Prepare Thorough Documentation
 
-Documentation is essential for helping the operations team understand how the system works, how to manage it, and how to troubleshoot any issues that arise.
+Documentation is essential for helping the operations team understand how the system works, how to manage it, and how to
+troubleshoot any issues that arise.
 
 ![105D02D6-14D7-4E05-900C-F8325BC67E75.jpeg](pictures/105D02D6-14D7-4E05-900C-F8325BC67E75.jpeg)
 
-Key Documentation Elements:
+### System Overview
 
-    •	System Overview: A high-level architectural diagram and description of the system, including key components, services, and dependencies.
-    •	Infrastructure Details: Documentation of infrastructure components (e.g., cloud resources, VMs, containers) and how they are provisioned. If using Infrastructure as Code (IaC), include details on the tools used (e.g., Terraform, CloudFormation).
-    •	Automation Scripts: Detailed documentation of the automation scripts or pipelines, including deployment steps, configuration files, and how they integrate with the system.
-    •	Configuration Management: List configuration files and how they’re managed (e.g., through Ansible, Puppet, Chef) with explanations of important settings and parameters.
-    •	Monitoring and Alerts: Describe the monitoring and logging setup, including the tools used (e.g., Prometheus, Grafana, CloudWatch), metrics being tracked, and alerting mechanisms.
-    •	Security and Compliance: Ensure operations have documentation around security protocols, access management (e.g., IAM, secrets management), and compliance policies.
-    •	Runbooks and Playbooks:
-    •	Runbooks: Step-by-step guides for handling common operational tasks, such as deployments, scaling, backups, and system updates.
-    •	Playbooks: Detailed instructions for managing specific incidents or outages, with troubleshooting steps and escalation paths.
+A high-level architectural diagram and description of the system, including key components, services, and dependencies.
 
-Example: Provide a Git repository or Confluence page with all infrastructure code (Terraform modules), deployment instructions, monitoring setup (Prometheus, Grafana dashboards), and playbooks for handling common issues like scaling or network failures.
+### Infrastructure Details
+
+Documentation of infrastructure components (e.g., cloud resources, VMs, containers) and how they are provisioned. If
+using Infrastructure as Code (IaC), include details on the tools used (e.g., Terraform, CloudFormation).
+
+### Automation Scripts
+
+Detailed documentation of the automation scripts or pipelines, including deployment steps, configuration files, and how
+they integrate with the system.
+
+### Configuration Management
+
+List configuration files and how they’re managed (e.g., through Ansible, Puppet, Chef) with explanations of important
+settings and parameters.
+
+### Monitoring and Alerts
+
+Describe the monitoring and logging setup, including the tools used (e.g., Prometheus, Grafana, CloudWatch), metrics
+being tracked, and alerting mechanisms.
+
+### Security and Compliance
+
+Ensure operations have documentation around security protocols, access management (e.g., IAM, secrets management),
+and compliance policies.
+
+### Pipelines
+
+Step-by-step guides for handling common operational tasks, such as deployments, scaling, backups, and system updates.
+
+**Example**
+
+Provide a Git repository or Confluence page with all infrastructure code (Terraform modules), deployment
+instructions, monitoring setup (Prometheus, Grafana dashboards), and playbooks for handling common issues like scaling
+or network failures.
+
+---
 
 ## Knowledge Transfer Sessions
 
-Conduct knowledge transfer (KT) sessions with the operations team to ensure they understand the system and the tools required to manage it.
+Conduct knowledge transfer (KT) sessions with the operations team to ensure they understand the system and the tools
+required to manage it.
 
-Key KT Sessions:
+### System Walkthrough
 
-    •	System Walkthrough: Explain the architecture and components in detail, focusing on the flow of data, key services, and integrations.
-    •	Automation Pipeline: Walk the operations team through the CI/CD pipeline, explaining how code moves from development to production and the steps involved in the automated deployment.
-    •	Deployment Processes: Demonstrate how new versions are deployed, how rollback mechanisms work, and how scaling (manual or automatic) can be handled.
-    •	Monitoring and Alerting: Train the team on how to use the monitoring tools and dashboards, what key metrics to watch, and how to handle alerts.
-    •	Troubleshooting Common Issues: Go over typical problems that might arise, such as deployment failures, performance bottlenecks, or security incidents, and provide troubleshooting strategies.
+Explain the architecture and components in detail, focusing on the flow of data, key services, and integrations.
 
-Example: Schedule a series of knowledge transfer sessions where the operations team is trained to deploy new features using Jenkins and Terraform and how to monitor the system with Grafana and Prometheus.
+### Automation Pipeline
+
+Walk the operations team through the CI/CD pipeline, explaining how code moves from development to production and the
+steps involved in the automated deployment.
+
+### Deployment Processes
+
+Demonstrate how new versions are deployed, how rollback mechanisms work, and how scaling (manual or automatic) can be
+handled.
+
+### Monitoring and Alerting
+
+Train the team on how to use the monitoring tools and dashboards, what key metrics to watch, and how to handle alerts.
+
+### Troubleshooting Common Issues
+
+Go over typical problems that might arise, such as deployment failures, performance bottlenecks, or security incidents,
+and provide troubleshooting strategies.
+
+**Example**
+
+Schedule a series of knowledge transfer sessions where the operations team is trained to deploy new features using
+Azure DevOps Pipelines and Terraform and how to monitor the system with Grafana and Prometheus.
+
+---
 
 ## Define Roles and Responsibilities
 
 Clearly outline the roles and responsibilities of the development and operations teams after the handover to ensure smooth collaboration and ownership of different aspects.
 
-Key Areas to Define:
+### Incident Management
 
-    •	Incident Management: Who is responsible for handling production issues? Define SLAs for response times, severity levels, and escalation procedures.
-    •	Monitoring: Ensure that the operations team takes responsibility for monitoring the system, responding to alerts, and maintaining dashboards.
-    •	Deployment Ownership: Decide whether deployments will be fully handed over to operations, or if the development team will retain responsibility for certain aspects (e.g., new feature rollouts).
-    •	Ongoing Support: Define support channels (e.g., Slack, Jira) and procedures for handling issues that require input from the development team.
+Who is responsible for handling production issues? Define SLAs for response times, severity levels, and escalation
+procedures.
 
-Example: Operations takes ownership of monitoring and incident management, while development is responsible for rolling out new features and fixing bugs during on-call hours.
+### Monitoring
+
+Ensure that the operations team takes responsibility for monitoring the system, responding to alerts, and maintaining
+dashboards.
+
+### Deployment Ownership
+
+Decide whether deployments will be fully handed over to operations, or if the development team will retain
+responsibility for certain aspects (e.g., new feature rollouts).
+
+### Ongoing Support
+
+Define support channels (e.g., Slack, Jira) and procedures for handling issues that require input from the development
+team.
+
+**Example**
+
+Operations takes ownership of monitoring and incident management, while development is responsible for rolling out new
+features and fixing bugs during on-call hours.
+
+---
 
 ## Provide Access and Credentials
 
 Ensure the operations team has access to all necessary systems, tools, and accounts they’ll need to manage the infrastructure and application.
 
-Key Access Points:
+### Cloud or Infrastructure Accounts
 
-    •	Cloud or Infrastructure Accounts: Ensure the team has access to cloud platforms (e.g., AWS, Azure, GCP) or on-premises servers, with the appropriate permissions based on least privilege principles.
-    •	CI/CD Pipelines: Provide access to CI/CD tools (e.g., Jenkins, GitLab CI), along with documentation on how to trigger deployments, manage jobs, and troubleshoot failed builds.
-    •	Monitoring and Logging Tools: Grant access to monitoring and logging systems (e.g., Grafana, Prometheus, ELK Stack) and train the team to create or modify dashboards and alerts.
-    •	Secrets Management: Ensure secure access to sensitive credentials or secrets (e.g., via HashiCorp Vault, AWS Secrets Manager, Azure Key Vault) is properly configured and documented.
-    •	Escalation Paths: Ensure that proper channels for escalating issues to development or security teams are established and accessible.
+Ensure the team has access to cloud platforms (e.g., AWS, Azure, GCP) or on-premises servers, with the appropriate
+permissions based on least privilege principles.
 
-Example: Provide the operations team access to AWS, Jenkins, Prometheus, and HashiCorp Vault, with IAM roles configured to provide least privilege access to only the necessary resources.
+### CI/CD Pipelines
+
+Provide access to CI/CD tools (e.g., Azure DevOps Pipelines, GitHub Actions), along with documentation on how to trigger
+deployments, manage jobs, and troubleshoot failed builds.
+
+### Monitoring and Logging Tools
+
+Grant access to monitoring and logging systems (e.g., Grafana, Prometheus, ELK Stack) and train the team to create or
+modify dashboards and alerts.
+
+### Secrets Management
+
+Ensure secure access to sensitive credentials or secrets (e.g., via HashiCorp Vault, AWS Secrets Manager, Azure Key
+Vault) is properly configured and documented.
+
+### Escalation Paths
+
+Ensure that proper channels for escalating issues to development or security teams are established and accessible.
+
+**Example**
+
+Provide the operations team access to AWS, Jenkins, Prometheus, and HashiCorp Vault, with IAM roles configured to
+provide least privilege access to only the necessary resources.
 
 ## Set Up Monitoring and Alerts
 
-Monitoring should be fully configured and operational before the handover. The operations team should have access to dashboards and alerts that notify them of any issues in the system.
+Monitoring should be fully configured and operational before the handover. The operations team should have access to
+dashboards and alerts that notify them of any issues in the system.
 
-Key Considerations:
+### Health Checks
 
-    •	Health Checks: Ensure that health checks are set up for critical services and infrastructure components, with clear indicators for performance and availability.
-    •	Alerting: Define alert thresholds for key metrics (e.g., CPU usage, memory, response times) and configure automated alerts through tools like PagerDuty, Slack, or email notifications.
-    •	Centralized Logging: Ensure logging is set up using tools like the ELK Stack or CloudWatch, with easy access to logs for troubleshooting and root cause analysis.
+Ensure that health checks are set up for critical services and infrastructure components, with clear indicators for
+performance and availability.
 
-Example: Set up Grafana dashboards to monitor CPU, memory, and disk usage on all servers, and configure PagerDuty alerts for high-priority incidents like service downtime.
+### Alerting
+
+Define alert thresholds for key metrics (e.g., CPU usage, memory, response times) and configure automated alerts through
+tools like PagerDuty, Slack, or email notifications.
+
+### Centralized Logging
+
+Ensure logging is set up using tools like the ELK Stack or CloudWatch, with easy access to logs for troubleshooting and
+root cause analysis.
+
+**Example**
+
+Set up Grafana dashboards to monitor CPU, memory, and disk usage on all servers, and configure PagerDuty alerts for
+high-priority incidents like service downtime.
+
+---
 
 ## Testing and Validation
 
 Before handing over the system to operations, perform extensive testing to ensure that the system is stable, the automation scripts work correctly, and the deployment pipeline is reliable.
 
-Key Tests:
+### End-to-End Testing
 
-    •	End-to-End Testing: Test the entire deployment process, from triggering a code push in the SCM to verifying that the system runs successfully in production.
-    •	Failure Scenarios: Simulate common failure scenarios (e.g., failed deployments, scaling issues) and ensure that the operations team knows how to handle them.
-    •	Performance Testing: Run load tests to validate that the system performs well under expected traffic and usage conditions.
-    •	Rollback Testing: Ensure that rollback mechanisms work smoothly in case a deployment fails or introduces a critical bug.
+Test the entire deployment process, from triggering a code push in the SCM to verifying that the system runs
+successfully in production.
+
+### Failure Scenarios
+
+Simulate common failure scenarios (e.g., failed deployments, scaling issues) and ensure that the operations team knows
+how to handle them.
+
+### Performance Testing
+
+Run load tests to validate that the system performs well under expected traffic and usage conditions.
+
+### Rollback Testing
+
+Ensure that rollback mechanisms work smoothly in case a deployment fails or introduces a critical bug.
 
 Example: Conduct a mock incident where a new deployment introduces an error, and the operations team rolls back the change using automated rollback mechanisms in Jenkins.
 
+---
+
 ## Establish a Support and Escalation Process
 
-Define clear processes for handling incidents, deploying changes, and escalating issues to other teams (e.g., development, security). Make sure these processes are documented and known to the operations team.
+Define clear processes for handling incidents, deploying changes, and escalating issues to other teams
+(e.g., development, security). Make sure these processes are documented and known to the operations team.
 
-Key Elements:
+### Incident Reporting
 
-    •	Incident Reporting: Define how incidents are reported (e.g., through Jira, ServiceNow, or a ticketing system) and ensure there is an easy way to track the status and resolution of incidents.
-    •	Escalation: Define escalation paths for critical issues that need to be resolved quickly. Ensure the operations team knows when to involve developers or security personnel.
-    •	On-Call Rotation: Set up an on-call rotation for after-hours or critical incidents. Ensure that the right stakeholders from development, security, and infrastructure teams are involved in the on-call schedule.
+Define how incidents are reported (e.g., through Jira, ServiceNow, or a ticketing system) and ensure there is an easy
+way to track the status and resolution of incidents.
 
-Example: Define a workflow where incidents are logged in Jira, critical issues are escalated to the development team via Slack or PagerDuty, and root cause analysis is documented for post-mortems.
+### Escalation
+
+Define escalation paths for critical issues that need to be resolved quickly. Ensure the operations team knows when to
+involve developers or security personnel.
+
+### On-Call Rotation
+
+Set up an on-call rotation for after-hours or critical incidents. Ensure that the right stakeholders from development,
+security, and infrastructure teams are involved in the on-call schedule.
+
+**Example**
+
+Define a workflow where incidents are logged in Jira, critical issues are escalated to the development team via Slack or
+PagerDuty, and root cause analysis is documented for post-mortems.
+
+> By-te-way: Post-mortems are a great way to learn from incidents and improve the system over time. Do you already have
+> a template for it?
+
+---
 
 ## Ongoing Maintenance and Optimization
 
 Ensure that the operations team is prepared for ongoing maintenance tasks such as patching, scaling, and system upgrades.
 
-Key Maintenance Tasks:
+### Patching
 
-    •	Patching: Define the process for applying security patches and updates to infrastructure and applications, ensuring minimal downtime.
-    •	Scaling: Document how to scale infrastructure (manually or automatically) as traffic increases. Provide guidelines for identifying when scaling is necessary.
-    •	Monitoring Adjustments: Operations should be empowered to adjust monitoring thresholds or create new alerts based on usage patterns or changing system requirements.
+Define the process for applying security patches and updates to infrastructure and applications, ensuring minimal
+downtime.
 
-Example: Provide a runbook on scaling AWS resources and updating Terraform modules as the system grows.
+### Scaling
+
+Document how to scale infrastructure (manually or automatically) as traffic increases. Provide guidelines for
+identifying when scaling is necessary.
+
+### Monitoring Adjustments
+
+Operations should be empowered to adjust monitoring thresholds or create new alerts based on usage patterns or changing
+system requirements.
+
+** Example**
+
+Provide a runbook on scaling AWS resources and updating Terraform modules as the system grows.
 
 ## Formal Acceptance
 
-    •	Sign-Off: Once the handover process is complete, conduct a formal acceptance meeting where operations acknowledges that they have received all the necessary documentation, training, and access to maintain the system.
-    •	Checklist: Create a checklist for the handover process, ensuring that all required tasks (documentation, access, knowledge transfer, testing) have been completed.
-    •	Handover Review: Conduct a review meeting to ensure that the handover has been smooth, and any issues
+### Sign-Off
 
-So you decided to take the path to a fully automated, reproducible and reliable IT infrastructure. No matter for which of the available solutions out there your decision thrives, most of them rely on a strong organizational and technological foundation with process and guard-rails that guide all involved people on how to do it.
-Getting started with Infrastructure as Code is hard and involves a lot of different topics to be aligned during the implementation and later on the operation of such an environment. It also introduces a totally new way of approaching infrastructure changes and the way you actually work.
-I will guide you through the top 10 most important topics we discovered during our journey with Terraform on different cloud platforms.
-Hopefully these lessons will make the transition for you easier because you can get rid of our failures before they happen to you.
-I've splitted the 10 parts into single blog posts because otherwise it would have been too much to cover in one.
-Previous parts:
-Part 1 - Define your Code Structure
-The complete topic was also presented in may 2023 at E2EVC in Berlin as part of an community session.
-So lets get started.
-Define the Operational Model of Your Infrastructure
-Defining the operational model of an IT infrastructure involves understanding how the IT infrastructure is managed, maintained, and operated. It involves identifying the processes, systems, and tools that are used to keep the IT infrastructure up and running effectively. The following steps can be taken to define the operational model of an IT infrastructure: 1. Define the goals: Before defining the operational model, it's important to identify the goals of the IT infrastructure. This can include things like ensuring high availability, minimizing downtime, and providing rapid response times to issues. 2. Determine the scope: Next, determine the scope of the IT infrastructure. This includes identifying the hardware, software, networking, and other components that make up the IT infrastructure. 3. Identify the processes: Identify the processes involved in managing and operating the IT infrastructure. This includes processes such as change management, incident management, and problem management. 4. Identify the systems and tools: Determine what systems and tools are used to manage the IT infrastructure. This includes things like monitoring software, backup and recovery systems, and security software. 5. Define roles and responsibilities: Define the roles and responsibilities of the people involved in managing the IT infrastructure. This includes the IT team as well as any external vendors or contractors. 6. Establish performance metrics: Establish performance metrics to monitor the effectiveness of the IT infrastructure. This can include metrics such as uptime, response time, and mean time to repair. 7. Continuous improvement: Finally, establish a process of continuous improvement to ensure that the operational model of the IT infrastructure continues to evolve and improve over time. This includes reviewing performance metrics and identifying areas for improvement. 1. Define the operational model of your infrastructure 1. Who does what and how 2. read access to production 3. read access to dev 4. changes to dev and prd only with terraform 5. dev should have their own sandboxes for testing stuff out manually 1. invest in nuke solutions to keep the costs low 1. Identify and prioritize resources: The first step in implementing Infrastructure as Code (IaC) is to identify the resources that require automation. You can prioritize the resources based on their criticality, complexity, or frequency of use. 2. Choose the right tools: There are various tools available in the market for implementing IaC, such as Terraform, Ansible, Chef, Puppet, etc. Evaluate these tools based on your requirements and choose the one that fits your needs. 3. Define the infrastructure: Once you choose the tool, define the infrastructure you want to create using a programming language. You can use YAML, JSON, or any other programming language supported by the tool. 4. Version control: The infrastructure code should be version-controlled to track any changes made to it. Use a version control system like Git to manage the code. 5. Continuous integration and continuous delivery: Implement continuous integration and delivery (CI/CD) to automatically test, build, and deploy the infrastructure code. Use tools like Jenkins, GitLab CI/CD, or Travis CI to automate the process. 6. Test and validate: Test the infrastructure code thoroughly, and validate its functionality to ensure that it meets the requirements. 7. Monitor and manage: Monitor the deployed infrastructure continuously, and manage it using the same infrastructure code. This ensures that any changes made to the infrastructure are consistent with the code. 8. Document: Document the infrastructure code and the deployment process to make it easy for others to understand and use. This will also help in troubleshooting and maintaining the infrastructure.
-Train your team: Train your team on IaC concepts and tools, and encourage them to adopt the new way of infrastructure management.
+Once the handover process is complete, conduct a formal acceptance meeting where operations acknowledges that they have
+received all the necessary documentation, training, and access to maintain the system.
+
+### Checklist
+
+Create a checklist for the handover process, ensuring that all required tasks (documentation, access, knowledge
+transfer, testing) have been completed.
+
+### Handover Review
+
+Conduct a review meeting to ensure that the handover has been smooth, and any issues

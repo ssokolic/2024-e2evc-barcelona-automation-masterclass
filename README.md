@@ -17,11 +17,11 @@ With more than 650.000 lines of code, 350 repositories and more than 8,000 work 
 we will teach you everything you need to know in the following topics and present examples to explain
 the most important requirements and concepts.
 
-### We developed a SaaS app > three times from scratch.
+### We are developing a SaaS app and adjusted our infrastructure over time
 
 #### Version 1
 
-We use available cloud services as much as we can.
+We used available cloud services as much as we can.
 
 #### Version 2
 
@@ -35,6 +35,12 @@ independent as we can from the tools and solutions we use.
 ---
 
 ## Agenda
+
+### Introduction
+
+Say something about yourself and your company. What are you doing? What are your goals? Why are you here?
+
+---
 
 ### Why should I automate?
 
