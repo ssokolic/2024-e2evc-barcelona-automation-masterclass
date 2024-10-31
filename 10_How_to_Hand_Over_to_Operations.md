@@ -253,6 +253,8 @@ PagerDuty, and root cause analysis is documented for post-mortems.
 
 Ensure that the operations team is prepared for ongoing maintenance tasks such as patching, scaling, and system upgrades.
 
+![d2d3caff1e5739a5ac0c7907bac1f467-2670187226.jpg](pictures/d2d3caff1e5739a5ac0c7907bac1f467-2670187226.jpg)
+
 ### Patching
 
 Define the process for applying security patches and updates to infrastructure and applications, ensuring minimal

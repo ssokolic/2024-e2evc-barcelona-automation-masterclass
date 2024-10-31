@@ -33,8 +33,10 @@ their peers to achieve common goals. Have a close look at your desired team memb
 their communication skills, and how they approach collaboration. It’s also essential to evaluate their flexibility and
 ability to work in an agile environment.
 
-> Communications skills are crucial for the success of such an implementation. It should be on-point, without to much side-information. Meetings and discussions should be well-prepared and as short as possible.
-> Assess Commitment and Motivation
+> Communications skills are crucial for the success of such an implementation. It should be on-point, without to much
+> side-information. Meetings and discussions should be well-prepared and as short as possible.
+
+### Assess Commitment and Motivation
 
 IaC implementations can be challenging and technically demanding, requiring persistence, dedication, and motivation. You need team members who are committed to the project's vision, goals, and challenges. Ensure that each one is clear on the project's scope, timelines, and objectives before onboarding them onto the team. It’s also crucial to evaluate their work ethic and passion for building innovative infrastructure solutions.
 
@@ -42,11 +44,16 @@ IaC implementations can be challenging and technically demanding, requiring pers
 
 > Invest time to define a clear vision and goal for your IaC implementation.
 
-Some places to get started:
+**Some places to get started**
+
 A good starting point to get an idea how to assess these demands is the Manifesto for Agile Software Development. It
 will help you ask the right questions.
 
+https://agilemanifesto.org/
+
 The Scrum values should also give you a good starting point on how to identify your team members.
+
+https://www.scrum.org/resources/scrum-values
 
 ---
 
@@ -59,7 +66,7 @@ If your worked in an ITIL process structure before, you will have to add at leas
 the organization (storage, security, network, etc.) to the team to shorten communication and coordination. Prepare to
 change the organization in long-term and transition it to a smaller, faster and more diverse structure.
 
-> Organizational change is the hardest path in an IaC implementation. If you don't get it right you won't have any
+> Organizational change is the hardest path in an IaC implementation. If you don't get it right, you won't have any
 > benefit of it, because every change will take ages to be coordinated and approved.
 > Evaluate also their values, beliefs, working habits, and personalities to ensure that they align with the project
 > culture. It's essential to build a team that values diversity, inclusion, open communication, and continuous
@@ -73,9 +80,10 @@ change the organization in long-term and transition it to a smaller, faster and 
 
 IaC is a rapidly evolving field, and the technology and tools used in the field are constantly evolving.
 Therefore, it is important to have a team that is willing to learn and adapt. Look for individuals who are committed to
-being continuous learners, willing to keep up-to-date with the latest developments and adapt to new technologies.
+being continuous learners, willing to keep up to date with the latest developments and adapt to new technologies.
 
-> Prepare for the fact that you will never know anything because it changes constantly. This should be fun and not a duty for any team member.
+> Prepare for the fact that you will never know anything because it changes constantly. This should be fun and not a
+> duty for any team member.
 
 ---
 
@@ -136,7 +144,7 @@ be easily integrated and deployed using automated pipelines.
 
 #### Operations Engineer
 
-Operations Engineers are responsible for managing and maintaining the infrastructure that supports the application.
+Operation Engineers are responsible for managing and maintaining the infrastructure that supports the application.
 They work closely with DevOps Engineers to ensure that infrastructure is reliable and scalable.
 
 ##### Skills Required

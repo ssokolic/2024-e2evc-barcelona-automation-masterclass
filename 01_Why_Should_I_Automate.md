@@ -22,6 +22,8 @@ behave consistently in different stages.
 Infrastructure as Code (IaC) allows organizations to manage infrastructure configurations like application code,
 ensuring a reliable and repeatable process with rollback capabilities.
 
+---
+
 ### "Speed" and Efficiency
 
 #### Faster Deployments
@@ -41,6 +43,8 @@ deployment.
 
 ![image.png](pictures/image.png)
 
+---
+
 ### Scalability
 
 #### Elastic Infrastructure
@@ -53,6 +57,8 @@ costs.
 Automation enables organizations to deploy and manage infrastructure across multiple regions, supporting rapid expansion
 or disaster recovery scenarios.
 
+---
+
 ### Cost Optimization
 
 #### Resource Management
@@ -63,6 +69,8 @@ always optimized for performance and cost.
 #### Efficient Use of Resources
 
 Organizations can focus on high-level strategic goals rather than spending time on repetitive manual tasks.
+
+---
 
 ### Security and Compliance
 
@@ -76,6 +84,8 @@ improving overall security.
 Automated infrastructure deployments, particularly with tools like AWS Config or HashiCorp Vault (which you use at XOAP),
 can help in tracking changes and maintaining compliance with industry standards like GDPR.
 
+---
+
 ### Disaster Recovery and High Availability
 
 #### Rapid Recovery
@@ -87,6 +97,8 @@ backups or pre-configured templates.
 
 Automated deployments allow infrastructure to be replicated across different environments, ensuring higher uptime and
 resiliency.
+
+---
 
 ### Collaboration and DevOps Culture
 
@@ -102,6 +114,8 @@ ultimately driving efficiency.
 
 > By automating infrastructure deployments, corporations can improve operational resilience, enhance security, and drive
 > efficiency, enabling them to remain competitive.
+
+---
 
 ## CONs
 
@@ -122,6 +136,8 @@ Teams may need to learn new tools or coding languages (e.g., Terraform, DSC) to 
 which can slow down adoption and implementation.
 Every platform has its own language.
 
+---
+
 ### Complexity of Managing Automation
 
 #### Overhead in Maintenance
@@ -135,6 +151,8 @@ failures.
 Automating every aspect of infrastructure might introduce unnecessary complexity, especially in smaller environments.
 It may require sophisticated orchestration and monitoring to ensure the automation runs as expected.
 
+---
+
 ### Risk of Over-Automation
 
 #### Lack of Flexibility
@@ -146,6 +164,8 @@ regulated environments where human intervention might be necessary.
 
 Not all processes benefit from automation. Automating inefficient or unstable processes can amplify existing problems,
 leading to more significant failures when automation scales across systems.
+
+---
 
 ### Dependency on Tools and Vendors
 
@@ -162,18 +182,22 @@ can lead to compatibility issues, making troubleshooting more difficult.
 
 [Cloud Native Computing Foundation Landscape](https://landscape.cncf.io/)
 
+---
+
 ### Security Risks
 
 #### Automated Misconfigurations
 
 If automation scripts are not properly configured, they can inadvertently introduce security vulnerabilities at scale.
-For example, if an automated process misconfigures a security group in a cloud environment, it can open up large
+For example, if an automated process misconfigured a security group in a cloud environment, it can open up large
 portions of the infrastructure to external threats.
 
 #### Loss of Control
 
 By automating too many security and deployment processes, companies might lose the manual oversight required to
 catch nuanced or unique security risks.
+
+---
 
 ### Reduced Human Oversight
 
@@ -187,17 +211,21 @@ issues. This can lead to problems going unnoticed until they cause a major failu
 Teams may lose the hands-on experience and technical knowledge that comes with manual infrastructure management.
 If something goes wrong with automation, engineers may find themselves ill-prepared to intervene effectively.
 
+---
+
 ### Customization and Unique Requirements
 
 #### Challenges in Customization
 
-Not all environments are easily automatable, particularly legacy systems or highly customized infrastructures.
+Not all environments are easy to automate, particularly legacy systems or highly customized infrastructures.
 Trying to automate such environments can be challenging and may not always lead to better outcomes.
 
 #### One-Size-Fits-All Approach
 
 Automation tools might not always fit the specific needs of an organization. Tailoring automation to meet unique
 requirements can add extra complexity and increase the risk of implementation failures.
+
+---
 
 ### Cultural Resistance
 
@@ -212,6 +240,8 @@ significant resistance.
 For businesses that don’t have a strong DevOps culture in place, moving toward automation might face barriers in
 cross-team collaboration, ownership of tasks, and process alignment.
 
+---
+
 ### Risk of Mass Failures
 
 Scaling Failures If an automated process contains a mistake, it can scale that mistake across the entire infrastructure
@@ -221,6 +251,8 @@ quickly. For example, an erroneous script can lead to widespread outages if depl
 
 Recovery can be challenging when an automated process fails, especially if there are no manual backups or processes in
 place. This could potentially lead to larger downtime and more significant business impact.
+
+---
 
 ### Legal and Compliance Issues
 
@@ -234,6 +266,8 @@ implications could lead to non-compliance, fines, or legal issues.
 
 Some automated processes might lack the transparency needed for compliance audits, making it harder to demonstrate that
 the company follows all necessary legal requirements.
+
+---
 
 ### Impact on Workforce
 
