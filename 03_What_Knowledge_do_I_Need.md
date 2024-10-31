@@ -64,6 +64,11 @@ automation. Learn how to define infrastructure tasks using Ansible playbooks.
 Other configuration management tools that can be used for infrastructure automation. Understanding how to define
 infrastructure states using these tools can be beneficial.
 
+#### Desired State Configuration (DSC)
+
+A feature of PowerShell, that can be used to define the desired state of a system and ensure that it remains in that
+state.
+
 #### Pulumi
 
 An alternative to Terraform that allows you to define infrastructure using familiar programming languages like Python,
@@ -144,6 +149,14 @@ Microsoft's cloud-based CI/CD service that can be used to automate the building,
 ### GitHub Actions
 
 GitHub's built-in automation tool that can be used to automate workflows, including CI/CD pipelines.
+
+### Argo Workflows
+
+An open-source container-native workflow engine that can be used to automate complex workflows in Kubernetes.
+
+### Argo CD
+
+An open-source continuous delivery tool for Kubernetes that can be used to automate the deployment of applications.
 
 ---
 
@@ -261,11 +274,6 @@ how to use InSpec is important for automating testing and validation of infrastr
 A Ruby-based testing framework that can be used to automate the testing of server configurations. Understanding how to
 use Serverspec is important for automating testing and validation of infrastructure setups.
 
-### Goss
-
-A YAML-based testing framework that can be used to automate the testing of server configurations. Understanding
-how to use Goss is important for automating testing and validation of infrastructure setups.
-
 ---
 
 ## Soft Skills
@@ -346,6 +354,8 @@ respond to shifting priorities in an automated environment.
 Automation initiatives often require collaboration across teams and departments. Strong teamwork skills are important
 for working effectively with others, sharing knowledge, and aligning automation efforts with organizational goals.
 
+---
+
 ## Cloud Platforms and Cloud Automation
 
 ### Cloud Providers
@@ -357,6 +367,22 @@ Familiarize yourself with major cloud platforms like:
 - Google Cloud Platform (GCP).
 
 Each platform has its own automation tools, such as AWS CloudFormation, Azure Automation, or Google Cloud Functions.
+
+---
+
+## Licensing and Compliance
+
+### Licensing
+
+Understand the licensing requirements for the tools and software you use in your automation workflows. Some tools may
+have open-source licenses, while others may require commercial licenses.
+
+### Compliance
+
+Ensure that your automation workflows comply with industry regulations and organizational policies. This includes
+protecting sensitive data, managing access controls, and auditing automated processes.
+
+---
 
 ## On-premises automation
 
@@ -371,10 +397,7 @@ You may use tools like:
 - Packer: A tool for creating machine images for multiple platforms from a single source configuration.
 - Vagrant: A tool for building and managing virtual machine environments in a single workflow.
 - Chocolatey: A package manager for Windows that can automate software installations and updates.
-- DSC: PowerShell Desired State Configuration (DSC) is a configuration management platform that automates the deployment
-  and management of software and configurations on Windows systems.
-- Jenkins: Jenkins is an open-source automation server that can be used to automate tasks like building, testing, and
-  deploying infrastructure.
+- Helm: A package manager for Kubernetes that can automate the deployment of applications and services.
 
 ---
 

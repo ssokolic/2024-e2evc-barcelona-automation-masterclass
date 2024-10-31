@@ -1,7 +1,5 @@
 # 2024-e2evc-barcelona-automation-masterclass
 
----
-
 In this Masterclass, you will get access to valuable insights and actionable knowledge required to develop and
 implement a robust automation strategy for your on-premises and cloud environments.
 
@@ -38,7 +36,13 @@ independent as we can from the tools and solutions we use.
 
 ### Introduction
 
-Say something about yourself and your company. What are you doing? What are your goals? Why are you here?
+Say something about yourself and your company.
+
+What are you doing?
+
+What are your goals?
+
+Why are you here?
 
 ---
 
@@ -106,7 +110,7 @@ Integrate agile work environments and plan automation projects seamlessly.
 
 Understand the key parts of a robust automation pipeline.
 
-![28655579a1a00d6ee9431df38b0a62f1-4271964123.jpg](pictures/28655579a1a00d6ee9431df38b0a62f1-4271964123.jpg)
+![4688689-2822015794.jpg](pictures/4688689-2822015794.jpg)
 
 ---
 
@@ -121,12 +125,6 @@ Best practices for transitioning automated processes into operational workflows.
 Ensure the integrity and resilience of your automation infrastructure through robust security measures.
 
 ![Security-meme-29-3504967507.png](pictures/Security-meme-29-3504967507.png)
-
-### What are the components of a complete pipeline?
-
-Understand the key parts of a robust automation pipeline.
-
-![4688689-2822015794.jpg](pictures/4688689-2822015794.jpg)
 
 ### What to Watch Out For?
 

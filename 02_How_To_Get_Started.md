@@ -19,6 +19,8 @@ It's important to take the first step of clearly understanding your repetitive t
 such as server provisioning, configuration updates, or scripts.
 This will help you identify areas that can be automated and serve as a good starting point.
 
+---
+
 ## Search for automation opportunities
 
 Consider identifying tasks that are repetitive and can be easily automated using scripts.
@@ -34,19 +36,23 @@ Some ideas to help you get started:
 - Hardening your systems based on CIS recommendations
 - Adjusting your firewall rules based on the latest threat intelligence
 
-> When you're looking at the opportunities, also have an eye on minification.
-> Keep your automation scripts as small as possible to eventually have a library of building blocks, that you can
-> dynamically put together for larger scenarios.
+> When you're looking at the opportunities, also have an eye on minification. Keep your automation scripts as small as
+> possible to eventually have a library of building blocks, that you can dynamically put together for larger scenarios.
 
-Define Objectives: Be clear on what you want to achieve with automation.
-This could include reducing deployment times, improving security, increasing scalability,
-or ensuring compliance with industry standards.
+---
+
+## Define Objectives
+
+Be clear on what you want to achieve with automation. This could include reducing deployment times, improving security,
+increasing scalability, or ensuring compliance with industry standards.
+
+---
 
 ## Documentation
 
 Having complete documentation is crucial for any project.
-If you already have it, you're lucky.
-If not, now is the perfect time to start.
+
+> If you already have it, you're lucky. If not, now is the perfect time to start.
 
 Some people believe that scripts and infrastructure as code are sufficient documentation.
 However, that's not the case.
@@ -63,6 +69,8 @@ Markdown language is the best choice for creating new documentation.
 
 ![IMG_6849.jpeg](pictures/IMG_6849.jpeg)
 
+---
+
 ## Select Automation Tools and Frameworks
 
 Depending on the opportunities you see to get started, you should familiarize yourself with the different tools and
@@ -73,9 +81,8 @@ technologies around your preferred platform, such as:
 - Continuous Integration/Continuous Deployment (CI/CD) pipelines with GitHub Actions, Azure Pipelines, Jenkins,
   GitLab CI/CD, or AWS CodePipeline
 
-> It's always advisable to start with simple solutions when automating tasks.
-
-    As you progress, the complexity will naturally increase.
+> It's always advisable to start with simple solutions when automating tasks. As you progress, the complexity will
+> naturally increase.
 
 ![Slide3.jpeg](pictures/Slide3.jpeg)
 
@@ -94,11 +101,13 @@ Popular infrastructure automation tools include:
 - AWS CloudFormation: For automating AWS resource deployments.
 - HashiCorp Vault: For automating secrets management and access control.
 
-> If you are using a cloud provider (e.g., AWS, Azure, GCP), leverage their native automation
-> frameworks and tools like AWS Lambda, Azure DevOps, or Google Cloud Deployment Manager.
-> But always keep in mind that you might want to switch to another cloud provider in the future.
+> If you are using a cloud provider (e.g., AWS, Azure, GCP), leverage their native automation frameworks and tools like
+> AWS Lambda, Azure DevOps, or Google Cloud Deployment Manager. But always keep in mind that you might want to switch to
+> another cloud provider in the future.
 
 ![IMG_6786.jpeg](pictures/IMG_6786.jpeg)
+
+---
 
 ## Start Small with High-Impact Areas
 
@@ -113,6 +122,8 @@ provides clear benefits.
 
 Develop a proof of concept to ensure that your automation processes work correctly before scaling them across the
 organization.
+
+---
 
 ## Implement change management and version control
 
@@ -133,18 +144,14 @@ Implementing Git also fosters collaboration as soon as you add more people to th
 teams to collaborate. This implementation also encourages knowledge sharing and supports the documentation by adding
 operational changes to the complete development and delivery process.
 
-## Implement Infrastructure as Code (IaC)
+---
 
-### Use Version Control
-
-Store infrastructure configuration in version control systems like Git. Tools like Terraform and AWS CloudFormation
-allow you to define and manage your infrastructure using code, making it easier to
-replicate and track changes.
-
-### Modularize
+## Modularize
 
 Break down your infrastructure code into reusable modules or templates. This will make it easier to manage, update, and
 scale your automation efforts over time.
+
+---
 
 ## Automate Testing and Validation
 
@@ -158,6 +165,8 @@ Terratest can help you test your infrastructure code.
 Integrate your infrastructure code into your CI/CD pipelines using tools like Azure DevOps Pipelines, GitHub Actions, or
 Jenkins. This will allow you to automatically test and deploy infrastructure changes in a controlled and repeatable way.
 
+---
+
 ## Monitor and Optimize
 
 ### Monitoring and Alerting
@@ -169,6 +178,8 @@ CloudWatch, Prometheus, or Grafana for real-time monitoring of automated infrast
 
 Implement automated rollback mechanisms to revert infrastructure changes in case of failures. For example, Terraform has
 built-in support for rollbacks if a deployment fails.
+
+---
 
 ## Establish Governance and Security
 
@@ -182,6 +193,8 @@ like HashiCorp Vault or AWS IAM for managing secrets and permissions.
 Leverage tools like AWS Config, Macie, and GuardDuty to automate compliance checks and security monitoring. This will help
 ensure that your infrastructure meets industry standards and regulatory requirements.
 
+---
+
 ## Create Documentation and Training
 
 ### Document Processes
@@ -193,6 +206,8 @@ your team understands how automation works and can troubleshoot issues when nece
 
 Invest in training your teams to manage and update the automation systems. Ensure that your team knows how to extend
 automation to new use cases, debug failures, and improve existing automation pipelines.
+
+---
 
 ## Gradual Rollout
 
@@ -206,6 +221,8 @@ automation without risking production outages.
 Gradually expand automation to more parts of your infrastructure and business processes. Avoid trying to automate
 everything at once, as this can lead to overwhelming complexity.
 
+---
+
 ## Review and Iterate
 
 ### Post-Deployment Reviews
@@ -217,6 +234,8 @@ from the team and refine the automation processes as necessary.
 
 Keep your automation scripts and tools up to date to align with new technologies, infrastructure changes, and business
 requirements.
+
+---
 
 ## Scale Automation
 
