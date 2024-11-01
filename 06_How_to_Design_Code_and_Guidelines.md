@@ -41,7 +41,7 @@ Keep the modules small (max 200 resources) for faster deployments and smaller im
 
 ![Slide6.jpeg](pictures/Slide6.jpeg)
 
-## Lego principle
+## Brick principle
 
 Organize your code into distinct modules or layers, each responsible for a specific concern (e.g., user interface,
 business logic, data access). This makes the codebase easier to maintain and test.
